@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .one div {
+        padding: 10px;
+        display: flex;
+    }
+
+    .one div input[type='checkbox'] {
+        display: none;
+    }
+    .one div label{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .one div label::before{
+        content: '';
+        display: inline-block;
+        width:30px;
+        height:30px;
+        border-radius: 50%;
+        background: #ccc;
+        margin-right:10px;
+        box-sizing: border-box;
+        transition: background ease-in .5s;
+    }
+    .one div input[type="checkbox"]:checked+label::before{
+        background: red;
+        border:5px solid #ccc;
+    }
+</style>
+
+<body>
+    <div class="item one">
+        <div>
+            <input type="checkbox" id="choose1">
+            <label for="choose1">Yhis is contant</label>
+        </div>
+        <div>
+            <input type="checkbox" id="choose2">
+            <label for="choose2">Yhis is contant</label>
+        </div>
+        <div>
+            <input type="checkbox" id="choose3">
+            <label for="choose3">Yhis is contant</label>
+        </div>
+        <div>
+            <input type="checkbox" id="choose4">
+            <label for="choose4">Yhis is contant</label>
+        </div>
+        <div>
+            <input type="checkbox" id="choose5">
+            <label for="choose5">Yhis is contant</label>
+        </div>
+        <div>
+            <input type="checkbox" id="choose6">
+            <label for="choose6">Yhis is contant</label>
+        </div>
+        <div>
+</body>
+
+</html>
